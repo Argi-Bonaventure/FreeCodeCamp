@@ -1,0 +1,316 @@
+/* ---------- Global CSS Reset ---------- */
+*,
+*::before,
+*::after{
+  box-sizing: border-box;       /* Buat padding dan border termasuk dalam lebar total */
+  margin: 0;                    /* Hilangkan margin default */
+  padding: 0;                   /* Hilangkan padding default */
+}
+
+
+
+html, body {
+  height: 100%;                  /* Pastikan html dan body memiliki tinggi penuh */
+  line-height: 1.5;              /* Pengaturan dasar untuk keterbacaan */
+  -webkit-font-smoothing: antialiased; /* Anti-aliasing halus di Safari */
+  font-family: system-ui, sans-serif; /* Fallback font stack */
+}
+
+img, picture, video, canvas, svg {
+  display: block;                /* Hilangkan margin bawah bawaan */
+  max-width: 100%;               /* Buat media merespons secara native */
+}
+
+button, input, select, textarea {
+  background-color: transparent; /* Hapus latar belakang dan border default */
+  border: none;                  /* Hapus border default */
+  font: inherit;                 /* Gunakan font family dari parent */
+  color: inherit;                /* Pertahankan warna teks */
+  outline: none;                 /* Hilangkan outline default saat fokus */
+}
+
+/* Font Import */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Redaction+10:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+
+body {
+  background-color: #0f172a;     /* Warna latar belakang halaman */
+  color: #cbd5e1;                   /* Warna teks default */
+  font-family: inter, sans-serif; /* Gunakan font Inter untuk teks default */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;                /* Warna teks heading */
+  font-family: poppins, sans-serif; /* Gunakan font Poppins untuk heading */
+}
+
+
+/* Header Styles */
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between; /* Atur konten header agar tersebar */
+    align-items: center;            /* Pusatkan konten header secara vertikal */
+    background-color: #1e293b;   /* Warna latar belakang header */
+    padding: 1rem;               /* Padding di sekitar konten header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan halus */
+}
+
+header nav ul li{
+    display: inline-block;
+    margin-right: 16px;
+}
+
+header nav ul li a {
+    color: #cbd5e1; /* Warna teks link */
+    text-decoration: none; /* Hapus garis bawah link */
+    font-weight: 500; /* Tebalkan teks link */
+}
+
+header nav ul li a:hover {
+    color: #06b6d4; /* Ubah warna teks saat hover */
+    text-decoration: underline; /* Tambahkan garis bawah saat hover */
+}
+
+/* Home Section */
+main #home {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: linear-gradient(to right, #06b6d4, #3b82f6); /* Tambahkan gradien biru */
+}
+
+main #home h2 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+main #home p {
+    font-size: 1.2rem;
+    color: #e0f2fe; /* Warna teks paragraf */
+    max-width: 600px;
+    margin: 0 auto; /* Pusatkan paragraf */
+}
+
+main #home a {
+    display:inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #1259de, #a93df0); /* Gradien biru untuk tombol */
+    color: #fff; /* Warna teks tombol */
+    text-decoration: none; /* Hapus garis bawah tombol */
+    border-radius: 24px; /* Tambahkan radius untuk sudut tombol */
+}
+
+main #home a:hover {
+    background: linear-gradient(to right, #2162dc, #af60e4); /* Ubah gradien saat hover */
+}
+
+/* About Section */
+main #about {
+    padding: 50px 20px;
+    max-width: 764px;
+    margin: 100px auto 0;
+}
+
+main #about h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+main #about article p {
+    text-align: justify;
+}
+
+
+/* lineup section */
+
+main #lineup {
+    width: 1200px;
+    margin: 100px auto 0;
+}
+
+main #lineup h3{
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main #lineup ul{
+    display: flex;
+    gap: 20px;
+}
+
+main #lineup ul li{
+    width: 200px;
+    list-style: none;
+    background-color: #1e293b;
+    text-align: center;
+    padding: 16px 12px;
+    border-radius: 12px;
+}
+
+main #lineup figure img{
+    margin: auto;
+    margin-bottom: 20px;
+    width: 150px;
+}
+
+/* Schedule Section */
+
+
+main #schedule {
+    width: 800px;
+    margin: 100px auto 0;
+}
+
+main #schedule h3{
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main #schedule table{;
+    width: 100%;
+}
+
+
+
+main #schedule thead th{
+    padding: 12px;
+    background-color: #06b6d4;
+    color: #0f172a;
+}
+
+main #schedule tbody td{
+    padding: 12px;
+}
+
+main #schedule tbody tr:nth-child(even){
+    background-color: #3d4864;
+}
+
+main #schedule tbody tr:hover{
+    background-color: #cbd5e12b;
+    transition: 0.3s, ease-in;
+
+}
+
+
+/* Tickets Section */
+
+main #tickets{
+    max-width: 800px;
+    margin: 100px auto 0;
+}
+
+main #tickets h3{
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+main #tickets table {
+    background-color: #1e293b;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border-radius: 12px;
+
+}
+
+main #tickets tbody td{
+    padding: 12px 24px;
+}
+
+main #tickets input:not(select, input[type="radio"],input[type="checkbox"] ){
+    background-color: white;
+    width: 100%;
+    border-radius: 4px;
+    padding: 6px 12px;
+}
+
+main #tickets input:not(select, input[type="radio"],input[type="checkbox"]):focus{
+    border: 4px solid #06b6d4;
+
+}
+
+main #tickets select{
+    background-color: white;
+    color: #1e293b ;
+    border-radius: 4px;
+    padding: 6px 12px;
+}
+
+main #tickets button{
+    background: linear-gradient(to right, #1259de, #a93df0); /* Gradien biru untuk tombol */
+    padding: 12px 24px;
+    border-radius: 24px;
+    color: white;
+}
+
+main #tickets button:hover{
+    background: linear-gradient(to right, #2162dc, #af60e4); /* Ubah gradien saat hover */
+}
+
+
+/* Gallery section */
+
+
+main #gallery{
+    max-width: 1200px;
+    margin: 100px auto 0;
+}
+
+main #gallery h3{
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+main #gallery ul{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px
+}
+
+main #gallery ul li{
+    list-style: none;
+    text-align: center;
+}
+
+main #gallery img{
+    width: 150px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
+footer{
+    background-color: #1e293b;
+    margin-top: 100px;
+    padding: 50px 0;
+    text-align: center;
+}
+
+footer p{
+    padding: 12px;
+}
+
+footer ul li{
+    display: inline-block;
+    margin-right: 20px;
+    padding: 20px;
+}

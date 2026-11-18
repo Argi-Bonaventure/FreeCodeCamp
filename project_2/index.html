@@ -39,7 +39,7 @@
     <section id="about">
       <h3>About The Festival</h3>
       <article><p>WPU StreamFest 2026 menghadirkan Neon Nights, pengalaman festival musik urban yang dirancang khusus untuk generasi Z yang haus akan ekspresi diri dan inovasi. Menawarkan perpaduan antara elektronik, indie, dan hip-hop mutakhir, festival ini akan mengubah stadion ikonik menjadi galaksi impian neon yang memukau, di mana lampu laser, proyeksi 3D, dan instalasi interaktif menyatu dengan irama musik yang mendebarkan. Dengan fokus pada keberlanjutan, StreamFest 2026 memimpin tren dengan inisiatif ramah lingkungan — mulai dari makanan yang berasal dari sumber lokal dan produk ramah lingkungan, hingga program daur ulang karbon dan area pengisian daya untuk kendaraan listrik, sehingga pesta ini menyenangkan sekaligus bertanggung jawab terhadap lingkungan.</p>
-      
+      <br>
       <p>Dirancang untuk menciptakan momen yang terhubung dan bebas repot, StreamFest mengadopsi sistem pembayaran cashless yang sepenuhnya terintegrasi. Kunjungi situs resmi kami, dapatkan tiket digital, dan nikmati pengalaman pembelian tiket tanpa antrian dan pembelian di dalam festival tanpa uang tunai melalui NFC-enabled wristbands dan QR-code. Dengan layanan praktis, ramah generasi muda, dan teknologi canggih, festival ini memungkinkan penonton untuk fokus pada musik dan kreativitas, menjadikan festival ini perayaan autentik dan inovatif bagi generasi Z di seluruh dunia.</p></article>
     </section>
 
@@ -175,25 +175,60 @@
       <h3>Tickets</h3>
       
       <form>
-        <label for="name">Nama Lengkap:</label>
-        <input type="text" id="name" name="name" required autofocus autocomplete="off">
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <br>
-        <label for="telepon">Nomor Telepon:</label>
-        <input type="tel" id="telepon" name="telepon" required>
-        <br><br>
-        <label for="ticket_type">Jenis Tiket:</label><br>
-        <input type="radio" id="vip" name="ticket_type" value="Regular">
-        <label for="Regular">Regular - Rp 500.000</label><br>
-        <input type="radio" id="regular" name="ticket_type" value="VIP">
-        <label for="VIP">VIP - Rp 1.500.000</label><br>
-        <input type="radio" id="student" name="ticket_type" value="VVIP">
-        <label for="VVIP">VVIP - Rp 3.000.000</label>
-        <br><br>
-        <label for="quantity">Jumlah Tiket:</label>
-        <select name="quantity" id="quantity" min="1" max="10" required>
+        <table>
+          <tbody>
+            <tr>
+            <td>
+<label for="name">Nama Lengkap:</label>
+            </td>
+            <td>
+<input type="text" id="name" name="name" required autofocus autocomplete="off">
+            </td>
+          </tr>
+           <tr>
+            <td>
+<label for="email">Email:</label>
+            </td>
+            <td>
+   <input type="email" id="email" name="email" required>
+            </td>
+          </tr>
+      <tr>
+        <td>
+<label for="telepon">Nomor Telepon:</label>
+        </td>
+        <td>
+<input type="tel" id="telepon" name="telepon" required>
+        </td>
+      </tr>
+        
+     <tr>
+      <td colspan="2">
+  <label for="ticket_type"><h4>Jenis Tiket:</h4></label>
+      </td>
+     </tr>
+        <tr>
+          <td colspan="2">
+<input type="radio" id="vip" name="ticket_type" value="Regular">
+<label for="Regular">Regular - Rp 500.000</label>
+          </td>
+        </tr>
+      <tr>
+        <td colspan="2">
+<input type="radio" id="regular" name="ticket_type" value="VIP">
+<label for="VIP">VIP - Rp 1.500.000</label>
+        </td>
+      </tr>
+        <tr>
+          <td colspan="2">
+<input type="radio" id="student" name="ticket_type" value="VVIP">
+<label for="VVIP">VVIP - Rp 3.000.000</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+<label for="quantity"><h4>Jumlah Tiket:</h4></label><br>
+<select name="quantity" id="quantity" min="1" max="10" required>
           <option value="1">1 Ticket</option>
           <option value="2">2 Tickets</option>
           <option value="3">3 Tickets</option>
@@ -205,21 +240,39 @@
           <option value="9">9 Tickets</option>
           <option value="10">10 Tickets</option>
         </select>
-        <br><br>
-        <label for="day">Pilih Hari:</label><br>
-        <input type="checkbox" id="day1" name="day1" required>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+<label for="day">Pilih Hari:</label><br>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+        <input type="checkbox" id="day1" name="day1" value="day1" required>
         <label for="day1">Day 1</label>
-        <input type="checkbox" id="day2" name="day2" required>
+        <input type="checkbox" id="day2" name="day2" value="day2">
         <label for="day2">Day 2</label>
-        <input type="checkbox" id="day3" name="day3" required>
+        <input type="checkbox" id="day3" name="day3" value="day3">
         <label for="day3">Day 3</label>
-        <br><br>
-        <button type="submit">Purchase Tickets</button>
+        </tr>
+        
+        <tr>
+          <td colspan="2">
+<button type="submit">Purchase Tickets</button>
+          </td>
+        </tr>
+          </tbody>
+          
+        
+        </table>
+        
       </form>
     </section>
 
     <!-- Gallery Section -->
     <section id="gallery">
+      <h3>Gallery</h3>
       <ul>
       <li><figure><img src="/project_2/asset/images/Crowd.jpeg" alt="Crowd" width="100px"><figcaption>Crowd</figcaption></figure></li>
       <li><figure><img src="/project_2/asset/images/Face Painting.jpeg" alt="Face Painting" width="100px"><figcaption>Face Painting</figcaption></figure></li>
@@ -232,7 +285,7 @@
   </main>
 
   <!-- Footer -->
-  <footer></footer>
+  <footer>
     <p>&copy; 2026 WPU StreamFest</p>
     <p>Follow us on social media:
       <ul>
